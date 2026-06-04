@@ -243,7 +243,7 @@ const animeData = [
         studio: "J.C.Staff",
         status: "Finalizado",
         releaseDate: "Octubre 2008",
-        image: "https://static.wikia.nocookie.net/wiki-doblaje-espana/images/a/a5/Toradora_-_Poster.png/revision/latest?cb=20250503092744&path-prefix=es",
+        image: "https://m.media-amazon.com/images/I/819aGP+W6aL._AC_UF1000,1000_QL80_.jpg",
         synopsis: "Ryuuji Takasu es un chico amable pero con ojos aterradores que hacen que todos le teman. Taiga Aisaka es una chica pequeña de carácter feroz apodada la 'Tigre Compacta'. Cuando Ryuuji descubre accidentalmente que Taiga está enamorada de su mejor amigo, y Taiga descubre que Ryuuji está enamorado de la mejor amiga de ella, deciden formar un pacto y ayudarse mutuamente a conquistar a sus respectivos amores.",
         characters: ["Taiga Aisaka", "Ryuuji Takasu", "Minori Kushieda", "Yuusaku Kitamura"]
     },
@@ -269,7 +269,7 @@ const animeData = [
         studio: "A-1 Pictures",
         status: "Finalizado",
         releaseDate: "Julio 2012",
-        image: "https://static.wikia.nocookie.net/doblaje/images/9/9c/SAO_Aincrad_Arc.jpg/revision/latest?cb=20230130074414&path-prefix=es",
+        image: "https://m.media-amazon.com/images/I/81mVoZWR6wL._AC_UF1000,1000_QL80_.jpg",
         synopsis: "En el año 2022, miles de jugadores se conectan a Sword Art Online (SAO), un revolucionario juego de rol de realidad virtual multijugador masivo en línea. Sin embargo, poco después de entrar, descubren que el creador del juego los ha atrapado dentro. La única forma de salir es superar los 100 pisos del castillo flotante de Aincrad; pero si mueren dentro del juego, morirán también en el mundo real.",
         characters: ["Kirito (Kazuto Kirigaya)", "Asuna Yuuki", "Yui", "Klein"]
     },
@@ -594,7 +594,7 @@ const animeData = [
         studio: "TMS Entertainment",
         status: "En Emisión",
         releaseDate: "Julio 2019",
-        image: "https://static.wikia.nocookie.net/dr-stone/images/3/31/Dr._Stone_%28Anime%29_promocional.jpg/revision/latest?cb=20200427222033&path-prefix=es",
+        image: "https://m.media-amazon.com/images/M/MV5BYzZkYjM1MWMtNTY3Mi00MTMzLTlhNmQtN2ExZjFkYzdjZmFjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         synopsis: "Un misterioso destello de luz verde convierte a toda la población humana en piedra de forma instantánea. 3700 años después, el joven genio de la ciencia Senku Ishigami despierta en un mundo donde la naturaleza ha reclamado el planeta. Decidido a reconstruir la civilización desde cero mediante el poder de la ciencia, Senku crea una fórmula para despetrificar a las personas.",
         characters: ["Senku Ishigami", "Taiju Oki", "Yuzuriha Ogawa", "Kohaku"]
     },
@@ -607,7 +607,7 @@ const animeData = [
         studio: "MAPPA",
         status: "Finalizado",
         releaseDate: "Octubre 2016",
-        image: "https://static.wikia.nocookie.net/yurionice/images/c/cf/Yuri%21%21%21_on_Ice.jpg/revision/latest?cb=20161026220716&path-prefix=es",
+        image: "https://a.storyblok.com/f/178900/640x900/faa417e5b9/8be7d43910d0fb80e45fd06282b6fd541493470340_full.jpg/m/640x900",
         synopsis: "Yuuri Katsuki, una de las promesas del patinaje artístico japonés, sufre una aplastante derrota en la final del Gran Premio. Deprimido, regresa a su hogar en Kyushu con dudas sobre continuar. Su ídolo, el cinco veces campeón mundial ruso Viktor Nikiforov, ve un video de Yuuri imitando su rutina y decide viajar a Japón para convertirse en su entrenador personal.",
         characters: ["Yuuri Katsuki", "Viktor Nikiforov", "Yuri Plisetsky", "Phichit Chulanont"]
     },
@@ -695,7 +695,7 @@ const animeData = [
 const characterData = [
     { name: "Tanjiro Kamado", anime: "Demon Slayer", image: "https://espadasymas.com/cdn/shop/collections/c7427b133752a62bf5c74fd8b5be8437f4d8dfddr1-564-564v2_hq.jpg?v=1779247814" },
     { name: "Satoru Gojo", anime: "Jujutsu Kaisen", image: "https://i.pinimg.com/736x/98/fa/6e/98fa6ece5f6a9b34b4190989f9c408db.jpg" },
-    { name: "Eren Yeager", anime: "Attack on Titan", image: "https://static.wikia.nocookie.net/shingeki-no-kyojin/images/e/ea/Eren_Jaeger_-_Anime.png/revision/latest?cb=20190429004402&path-prefix=es" },
+    { name: "Eren Yeager", anime: "Attack on Titan", image: "https://wallpapers.com/images/featured/eren-yeager-pfp-p4ff16eninzqrgui.jpg" },
     { name: "Goku", anime: "Dragon Ball", image: "https://media.gq.com.mx/photos/5f6ce732bc946e88f6c96320/16:9/w_2560%2Cc_limit/goky%2520ultra%2520instinto.jpg" },
     { name: "Monkey D. Luffy", anime: "One Piece", image: "https://f.rpp-noticias.io/2018/11/26/551055_716795.jpg?width=1020&quality=80" }
 ];
