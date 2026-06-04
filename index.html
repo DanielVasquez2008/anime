@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AnimeFlux - El portal definitivo de animes populares. Explora los mejores animes como Demon Slayer, Jujutsu Kaisen, One Piece, y más, con detalles, personajes y sinopsis.">
+    <title>AnimeFlux - Portal de Animes Populares</title>
+    
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado de Navegación -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-fire-flame-curved"></i> Anime<span>Flux</span>
+            </a>
+            
+            <div class="nav-actions">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar anime...">
+                </div>
+                
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Héroe -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Tendencia Global</span>
+            <h1>El Portal Definitivo De <br><span>Animes Populares</span></h1>
+            <p>Sumérgete en historias legendarias, héroes inolvidables y batallas épicas. Descubre información detallada sobre las producciones de animación más aclamadas del momento.</p>
+            <div class="hero-buttons">
+                <a href="#animes-catalog" class="btn btn-primary">
+                    <i class="fa-solid fa-compass"></i> Explorar Catálogo
+                </a>
+                <a href="#spotlight" class="btn btn-secondary">
+                    <i class="fa-solid fa-users"></i> Personajes Destacados
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        
+        <!-- Sección de Filtros y Catálogo -->
+        <section id="animes-catalog">
+            <div class="filter-section">
+                <h2 class="section-title">
+                    <i class="fa-solid fa-star"></i> Catálogo de Animes
+                </h2>
+                
+                <div class="filter-categories" id="filterTabs">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="Acción">Acción</button>
+                    <button class="filter-btn" data-category="Fantasía">Fantasía</button>
+                    <button class="filter-btn" data-category="Aventura">Aventura</button>
+                    <button class="filter-btn" data-category="Drama">Drama</button>
+                    <button class="filter-btn" data-category="Romance">Romance</button>
+                    <button class="filter-btn" data-category="Deportes">Deportes</button>
+                    <button class="filter-btn" data-category="Escolar">Escolar</button>
+                    <button class="filter-btn" data-category="Terror">Terror</button>
+                </div>
+            </div>
+
+            <!-- Grilla de Animes (Populado por JS) -->
+            <div class="anime-grid" id="animeGrid">
+                <!-- Se inyecta dinámicamente -->
+            </div>
+        </section>
+
+        <!-- Sección de Spotlight de Personajes -->
+        <section class="characters-section" id="spotlight">
+            <h2 class="section-title">
+                <i class="fa-solid fa-users"></i> Personajes Destacados
+            </h2>
+            
+            <div class="character-carousel-wrapper">
+                <div class="character-carousel" id="characterCarousel">
+                    <!-- Se inyecta dinámicamente -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Detalle Modal de Anime -->
+    <div class="modal-overlay" id="animeModal">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Cerrar modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <!-- Poster -->
+            <div class="modal-poster">
+                <img id="modalImg" src="" alt="Poster de Anime">
+            </div>
+            
+            <!-- Contenido -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-rating" id="modalRating">
+                        <i class="fa-solid fa-star"></i> <span>0.0</span>
+                    </span>
+                    <h2 class="modal-title" id="modalTitle">Título del Anime</h2>
+                    <div class="modal-metadata" id="modalMetadata">
+                        <!-- Año, Episodios, Studio -->
+                    </div>
+                </div>
+                
+                <p class="modal-synopsis" id="modalSynopsis">
+                    Sinopsis detallada...
+                </p>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Géneros</span>
+                        <span class="info-value" id="modalGenres">Acción, Fantasía</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Estudio de Animación</span>
+                        <span class="info-value" id="modalStudio">Ufotable</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Estado</span>
+                        <span class="info-value" id="modalStatus">Finalizado / En Emisión</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Fecha de Estreno</span>
+                        <span class="info-value" id="modalDate">Abril 2019</span>
+                    </div>
+                </div>
+                
+                <div class="modal-characters">
+                    <h3>Personajes Principales</h3>
+                    <div class="character-names" id="modalCharacterTags">
+                        <!-- Nombres de los personajes -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <i class="fa-solid fa-fire-flame-curved"></i> AnimeFlux
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-link" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="footer-text">&copy; 2026 AnimeFlux. Todos los derechos reservados. Creado con fines de demostración.</p>
+        </div>
+    </footer>
+
+    <!-- Lógica JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
