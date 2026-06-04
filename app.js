@@ -22,7 +22,7 @@ const animeData = [
         studio: "MAPPA",
         status: "En Emisión",
         releaseDate: "Octubre 2020",
-        image: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/f/f6/JJK_New_Key_Visual.jpg/revision/latest?cb=20200914020414&path-prefix=es",
+        image: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/f/f6/JJK_New_Key_Visual.jpg/revision/latest/scale-to-width-down/1200?cb=20200914020414&path-prefix=es",
         synopsis: "Yuji Itadori es un estudiante de secundaria con una fuerza física excepcional que prefiere pasar tiempo con el club de ocultismo. La vida de Yuji da un vuelco cuando se topa con un objeto maldito de alto rango que desencadena una serie de eventos sobrenaturales. Para proteger a sus amigos, Yuji se traga el dedo de Ryomen Sukuna, el 'Rey de las Maldiciones', convirtiéndose en su recipiente y entrando al oscuro e implacable mundo de la hechicería jujutsu.",
         characters: ["Yuji Itadori", "Megumi Fushiguro", "Nobara Kugisaki", "Satoru Gojo", "Ryomen Sukuna", "Suguru Geto"]
     },
